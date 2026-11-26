@@ -1,0 +1,116 @@
+body {
+    background-color: #070b12;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Cahaya ambient biru yang sangat halus di atas hero */
+.hero-glow {
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.16) 0%, rgba(7, 11, 18, 0) 70%);
+}
+
+/* Spotlight halus mengikuti kursor pada kartu */
+.spotlight-card {
+    position: relative;
+}
+
+.spotlight-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: radial-gradient(420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+            rgba(56, 189, 248, 0.08),
+            transparent 60%);
+}
+
+.spotlight-card:hover::before {
+    opacity: 1;
+}
+
+/* Equalizer mini interaktif */
+@keyframes eqMove {
+
+    0%,
+    100% {
+        transform: scaleY(0.28);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+}
+
+.eq-bar {
+    transform-origin: bottom;
+    animation: eqMove 0.9s ease-in-out infinite;
+}
+
+.eq-bar:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.eq-bar:nth-child(3) {
+    animation-delay: 0.45s;
+}
+
+.eq-bar:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.eq-bar:nth-child(5) {
+    animation-delay: 0.35s;
+}
+
+.eq-paused .eq-bar {
+    animation-play-state: paused;
+    transform: scaleY(0.35);
+}
+
+/* Animasi masuk saat scroll */
+.fade-up {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fokus keyboard yang jelas */
+:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+/* Anchor tidak tertutup navbar sticky */
+section[id] {
+    scroll-margin-top: 4.5rem;
+}
+
+/* Hormati pengguna yang mematikan animasi */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto !important;
+    }
+
+    .fade-up {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .eq-bar {
+        animation: none;
+        transform: scaleY(0.6);
+    }
+}

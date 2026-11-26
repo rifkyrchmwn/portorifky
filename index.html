@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muchamad Rifky Rachmawan — System Audio, Ngoprek Web & Gamer</title>
+    <meta name="description" content="Portofolio Muchamad Rifky Rachmawan: ngulik system audio, ngoprek web, dan setting PC gaming." />
+    <meta name="theme-color" content="#070b12" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Muchamad Rifky Rachmawan — System Audio, Ngoprek Web & Gamer" />
+    <meta property="og:description" content="Ngulik system audio, ngoprek web, dan setting PC gaming." />
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='%232563eb'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
+    <noscript>
+        <style>
+            .fade-up {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body class="antialiased selection:bg-blue-500/30 selection:text-blue-200">
+
+    <a href="#konten"
+        class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-blue-600 focus:px-3 focus:py-2 focus:text-sm focus:text-white">Lewati
+        ke konten</a>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-[#070b12]/85 backdrop-blur-md">
+        <div class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 sm:px-10 lg:px-16">
+            <a href="#" class="flex items-center gap-2.5 font-mono text-sm font-semibold tracking-tight text-slate-100">
+                <span class="h-2 w-2 rounded-full bg-blue-500"></span>
+                <span>Legam<span class="text-blue-400">.dev</span></span>
+            </a>
+
+            <nav aria-label="Navigasi utama" class="hidden items-center gap-8 text-sm text-slate-400 md:flex">
+                <a href="#tentang" class="transition hover:text-slate-100">Tentang</a>
+                <a href="#bidang" class="transition hover:text-slate-100">Hobi & Operekan</a>
+                <a href="#arsip" class="transition hover:text-slate-100">Arsip</a>
+                <a href="#kontak"
+                    class="rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-500">
+                    Kontak
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"
+                class="rounded-lg border border-slate-800 p-2 text-slate-300 hover:bg-slate-900 md:hidden">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-slate-800 bg-[#070b12] px-6 py-4 md:hidden">
+            <div class="flex flex-col gap-3 text-sm text-slate-300">
+                <a href="#tentang" class="mobile-link py-1 hover:text-blue-400">Tentang</a>
+                <a href="#bidang" class="mobile-link py-1 hover:text-blue-400">Hobi & Operekan</a>
+                <a href="#arsip" class="mobile-link py-1 hover:text-blue-400">Arsip</a>
+                <a href="#kontak" class="mobile-link py-1 text-blue-400">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="konten" class="w-full">
+
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden">
+            <div
+                class="hero-glow pointer-events-none absolute -top-40 left-1/2 h-[340px] w-[780px] -translate-x-1/2 rounded-full">
+            </div>
+
+            <div
+                class="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-16 sm:px-10 md:py-24 lg:grid-cols-12 lg:gap-14 lg:px-16">
+                <!-- Kiri: Identitas & Ringkasan -->
+                <div class="fade-up lg:col-span-7">
+                    <h1
+                        class="text-4xl font-extrabold leading-[1.12] tracking-tight text-slate-50 sm:text-5xl xl:text-[56px]">
+                        Muchamad Rifky Rachmawan
+                    </h1>
+
+                    <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+                        Hobi ngulik sistem audio biar suaranya nendang dan jernih, iseng bikin web sendiri kalau lagi
+                        gabut, sama main game buat hiburan.
+                    </p>
+
+                    <div class="mt-9 flex flex-wrap items-center gap-4">
+                        <a href="#arsip"
+                            class="rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500">
+                            Liat Operekan
+                        </a>
+                        <a href="#kontak"
+                            class="rounded-lg border border-slate-700/90 bg-[#0c121e] px-6 py-3 text-sm font-medium text-slate-200 transition hover:border-blue-500/50 hover:text-white">
+                            Kontak / Mabar
+                        </a>
+                    </div>
+
+                    <!-- Strip Info -->
+                    <div
+                        class="mt-12 grid grid-cols-3 gap-4 rounded-xl border border-slate-800/90 bg-[#0b101b]/90 p-4 sm:gap-6 sm:p-5">
+                        <div>
+                            <span class="text-xs font-medium text-blue-400">Utama</span>
+                            <p class="mt-1 text-sm font-semibold text-slate-100">System Audio</p>
+                            <p class="mt-0.5 text-xs text-slate-400">Routing & Sound</p>
+                        </div>
+                        <div class="border-l border-slate-800 pl-4 sm:pl-6">
+                            <span class="text-xs font-medium text-blue-400">Iseng</span>
+                            <p class="mt-1 text-sm font-semibold text-slate-100">Ngoprek Web</p>
+                            <p class="mt-0.5 text-xs text-slate-400">HTML, CSS & JS</p>
+                        </div>
+                        <div class="border-l border-slate-800 pl-4 sm:pl-6">
+                            <span class="text-xs font-medium text-blue-400">Hobi</span>
+                            <p class="mt-1 text-sm font-semibold text-slate-100">Gamer</p>
+                            <p class="mt-0.5 text-xs text-slate-400">PC Gaming & Tuning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanan: Kartu Foto Profil -->
+                <div class="fade-up lg:col-span-5" style="transition-delay: 120ms">
+                    <div
+                        class="mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] p-3">
+                        <div class="aspect-[4/5] w-full overflow-hidden rounded-xl bg-slate-900">
+                            <img src="img/profile.JPG" alt="Muchamad Rifky Rachmawan"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div
+                            class="mt-3 flex items-center justify-between rounded-lg border border-slate-800/80 bg-[#070b12] px-4 py-2.5">
+                            <div>
+                                <p class="text-xs font-semibold text-slate-200">Muchamad Rifky Rachmawan</p>
+                                <p class="font-mono text-[11px] text-slate-400">Indonesia, Jawa Timur, Banyuwangi</p>
+                            </div>
+                            <button id="eq-toggle" title="Klik buat pause/play visual audio" aria-label="Jeda animasi equalizer" aria-pressed="false"
+                                class="flex h-6 items-end gap-1 rounded border border-slate-800 bg-[#0c121e] px-2.5 py-1.5 transition hover:border-blue-500/50">
+                                <span class="eq-bar h-full w-0.5 rounded-full bg-blue-400"></span>
+                                <span class="eq-bar h-full w-0.5 rounded-full bg-sky-400"></span>
+                                <span class="eq-bar h-full w-0.5 rounded-full bg-blue-500"></span>
+                                <span class="eq-bar h-full w-0.5 rounded-full bg-sky-300"></span>
+                                <span class="eq-bar h-full w-0.5 rounded-full bg-blue-400"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tentang Saya -->
+        <section id="tentang" class="border-t border-slate-800/80 py-20">
+            <div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 sm:px-10 lg:grid-cols-12 lg:px-16">
+                <div class="lg:col-span-5">
+                    <div class="overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] p-3">
+                        <div class="aspect-video w-full overflow-hidden rounded-xl bg-slate-900">
+                            <!-- Ganti src dengan "img/about.jpg" -->
+                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1000&q=85"
+                                alt="Setup Audio dan PC Rifky"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <h2 class="text-2xl font-bold text-slate-50 sm:text-3xl">
+                        Ngulik Audio, Bikin Web Iseng, sama Main Game
+                    </h2>
+                    <p class="mt-4 text-sm leading-relaxed text-slate-400 sm:text-base">
+                        Kenalin, nama saya Muchamad Rifky Rachmawan. Sehari-hari paling betah ngoprek perangkat
+                        audio—dari atur routing suara sampai nyari settingan EQ yang pas di kuping. Kalau lagi santai,
+                        biasanya iseng ngerakit web sederhana buat eksperimen tampilan, terus lanjut mabar bareng teman.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid: Minat & Aktivitas -->
+        <section id="bidang" class="border-t border-slate-800/80 py-20">
+            <div class="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16">
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-50 sm:text-3xl">3 Hal yang Paling Sering Dikerjain
+                    </h2>
+                </div>
+
+                <div class="grid gap-6 lg:grid-cols-12">
+                    <!-- 01 System Audio -->
+                    <div
+                        class="rounded-2xl border border-slate-800 bg-[#0b101b] p-8 lg:col-span-6">
+                        <div class="relative">
+                            <h3 class="text-xl font-bold text-slate-100">System Audio</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                                Ngatur jalur suara, setting DAW dan driver ASIO, gain staging, sampai nyetel perangkat
+                                sound system biar suaranya bersih, nendang, dan nggak delay.
+                            </p>
+                            <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs text-slate-300">
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">Signal
+                                    Routing</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">ASIO /
+                                    DAW</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">Sound
+                                    System</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">EQ &
+                                    Crossover</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 Ngoprek Web -->
+                    <div
+                        class="rounded-2xl border border-slate-800 bg-[#0b101b] p-8 lg:col-span-6">
+                        <div class="relative">
+                            <h3 class="text-xl font-bold text-slate-100">Ngoprek Web</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-slate-400">
+                                Bikin web-web iseng buat eksperimen tampilan, nyoba layout baru, atau sekadar ngerakit
+                                halaman web ringan buat dipakai sendiri maupun teman.
+                            </p>
+                            <div class="mt-6 flex flex-wrap gap-2 font-mono text-xs text-slate-300">
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">HTML</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">CSS /
+                                    Tailwind</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">JS Dasar</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1">Web Iseng</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 Gamer -->
+                    <div
+                        class="rounded-2xl border border-slate-800 bg-[#0b101b] p-8 lg:col-span-12">
+                        <div class="relative grid gap-6 lg:grid-cols-12 lg:items-center">
+                            <div class="lg:col-span-7">
+                                <h3 class="text-xl font-bold text-slate-100">Gamer</h3>
+                                <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                    Main game kompetitif maupun santai di PC. Sekalian ngulik settingan grafis biar FPS
+                                    aman dan nyetel EQ audio khusus biar suara step musuh kedengeran lebih jelas.
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-wrap gap-2 font-mono text-xs text-slate-300 lg:col-span-5 lg:justify-end">
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1.5">PC
+                                    Gaming</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1.5">FPS &
+                                    Simulasi</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1.5">Audio EQ
+                                    Gaming</span>
+                                <span class="rounded-md border border-slate-800 bg-[#070b12] px-3 py-1.5">FPS
+                                    Tuning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portofolio / Arsip -->
+        <section id="arsip" class="border-t border-slate-800/80 py-20">
+            <div class="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16">
+                <div class="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-50 sm:text-3xl">Setup, Web Iseng & Gameplay</h2>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 text-sm" id="filter-buttons" role="group" aria-label="Filter arsip">
+                        <button data-filter="all" aria-pressed="true"
+                            class="filter-btn rounded-lg bg-blue-600 px-3.5 py-2 font-medium text-white transition">Semua</button>
+                        <button data-filter="audio" aria-pressed="false"
+                            class="filter-btn rounded-lg border border-slate-800 bg-[#0b101b] px-3.5 py-2 text-slate-300 transition hover:border-slate-600">Audio</button>
+                        <button data-filter="web" aria-pressed="false"
+                            class="filter-btn rounded-lg border border-slate-800 bg-[#0b101b] px-3.5 py-2 text-slate-300 transition hover:border-slate-600">Ngoprek
+                            Web</button>
+                        <button data-filter="gamer" aria-pressed="false"
+                            class="filter-btn rounded-lg border border-slate-800 bg-[#0b101b] px-3.5 py-2 text-slate-300 transition hover:border-slate-600">Gamer</button>
+                    </div>
+                </div>
+
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" id="project-grid">
+                    <!-- Card 1: Audio -->
+                    <article data-category="audio" data-index="0"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80"
+                                alt="Live Audio Routing"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>System audio</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Routing Audio & Preset Efek</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Setting jalur audio multi-channel buat monitoring, colok instrumen, sama efek real-time
+                                tanpa delay.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">ASIO</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">DAW Routing</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">EQ / Limiter</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Ngoprek Web -->
+                    <article data-category="web" data-index="1"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+                                alt="Eksperimen Web Pribadi"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>Ngoprek web</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Web Portofolio & Halaman Iseng</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Kumpulan halaman web hasil ngulik HTML, CSS, sama JS dasar buat latihan bikin tampilan
+                                dark mode yang enak dilihat.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">HTML</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Tailwind CSS</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">JS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Gamer -->
+                    <article data-category="gamer" data-index="2"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+                                alt="Gaming Setup & Gameplay"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>Gamer</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Setup Gaming & Clip Mabar</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Settingan PC buat main game kompetitif, racikan EQ biar step kedengeran jelas, sama
+                                arsip rekaman mabar.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">FPS Audio EQ</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">OBS Clip</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">PC Tuning</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Audio -->
+                    <article data-category="audio" data-index="3"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+                                alt="Sound System Calibration"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>System audio</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Nyetel Sound System & Audio
+                                Interface</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Ngepasin gain staging, potong frekuensi crossover, sama nyetel jalur audio interface ke
+                                power ampli biar suaranya bersih.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Gain Staging</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Crossover</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Sound Check</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Ngoprek Web -->
+                    <article data-category="web" data-index="4"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80"
+                                alt="Mini Web Tools"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>Ngoprek web</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Landing Page & Mini Tools Browser
+                            </h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Ngerakit halaman profil, link-in-bio custom, sama tools kecil berbasis browser buat
+                                dipakai sendiri pas lagi butuh.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Responsive</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Dark Mode</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">DOM JS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Gamer -->
+                    <article data-category="gamer" data-index="5"
+                        class="spotlight-card project-card group cursor-pointer overflow-hidden rounded-2xl border border-slate-800 bg-[#0b101b] transition duration-200 hover:border-blue-500/50">
+                        <div class="aspect-video w-full overflow-hidden border-b border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80"
+                                alt="Visual & Shader Preset"
+                                class="h-full w-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between text-xs font-medium text-blue-400">
+                                <span>Gamer</span>
+                                <span class="text-slate-400 group-hover:text-slate-200">Lihat detail</span>
+                            </div>
+                            <h3 class="mt-2.5 text-lg font-semibold text-slate-100">Preset Shader & Optimasi FPS</h3>
+                            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+                                Ngulik preset shader biar tampilan game makin cakep tapi FPS tetap stabil dan nggak
+                                patah-patah pas main lama.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Custom Shaders</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">Low Latency</span>
+                                <span class="rounded bg-[#070b12] px-2.5 py-1">FPS Boost</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak" class="border-t border-slate-800/80 py-20">
+            <div class="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16">
+                <div
+                    class="flex flex-col justify-between gap-8 rounded-2xl border border-slate-800 bg-[#0b101b] p-8 sm:p-12 lg:flex-row lg:items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-50 sm:text-3xl">Mau Ngobrol atau Ajak Mabar?</h2>
+                        <p class="mt-3 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+                            Kalau mau diskusi soal settingan audio, tukar pikiran ngoprek web, atau sekadar mabar,
+                            langsung colek lewat salah satu akun di samping.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <button data-copy="muchamadrifkyrachmawan@gmail.com" data-msg="Email disalin!"
+                            class="copy-btn rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500">
+                            Salin Email
+                        </button>
+                        <a href="https://github.com/rifkyrchmwn" target="_blank" rel="noopener noreferrer"
+                            class="rounded-lg border border-slate-700 bg-[#070b12] px-5 py-3 text-sm font-medium text-slate-200 transition hover:border-blue-500/50 hover:text-white">
+                            GitHub
+                        </a>
+                        <a href="https://www.instagram.com/rifkyrchmwn"
+                            target="_blank" rel="noopener noreferrer"
+                            class="rounded-lg border border-slate-700 bg-[#070b12] px-5 py-3 text-sm font-medium text-slate-200 transition hover:border-blue-500/50 hover:text-white">
+                            Instagram
+                        </a>
+                        <button data-copy="rembo__" data-msg="Username Discord disalin!"
+                            class="copy-btn rounded-lg border border-slate-700 bg-[#070b12] px-5 py-3 text-sm font-medium text-slate-200 transition hover:border-blue-500/50 hover:text-white">
+                            Discord
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 text-center font-mono text-xs text-slate-400">
+        © <span id="year"></span> Legam.dev — Muchamad Rifky Rachmawan.
+    </footer>
+
+    <!-- Modal Detail -->
+    <div id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
+        <div id="modal-box" class="w-full max-w-lg rounded-2xl border border-slate-800 bg-[#0b101b] p-6 shadow-2xl">
+            <div class="flex items-center justify-between">
+                <span id="modal-category" class="text-xs font-medium text-blue-400">Kategori</span>
+                <button id="modal-close-icon" aria-label="Tutup"
+                    class="rounded-lg p-1 text-slate-400 hover:bg-slate-800 hover:text-slate-100">✕</button>
+            </div>
+            <h3 id="modal-title" class="mt-2 text-xl font-bold text-slate-100">Judul</h3>
+            <p id="modal-desc" class="mt-3 text-sm leading-relaxed text-slate-300">Deskripsi detail.</p>
+            <div class="mt-5 border-t border-slate-800 pt-4">
+                <div class="text-xs font-medium text-slate-400">Perangkat & tools</div>
+                <div id="modal-stack" class="mt-2 flex flex-wrap gap-2 font-mono text-xs text-slate-300"></div>
+            </div>
+            <div class="mt-6 flex justify-end">
+                <button id="modal-close-btn"
+                    class="rounded-lg bg-slate-800 px-4 py-2 text-xs font-semibold text-slate-200 hover:bg-slate-700">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" role="status" aria-live="polite"
+        class="pointer-events-none fixed bottom-6 right-6 z-50 translate-y-4 opacity-0 transition-all duration-200">
+        <div id="toast-msg"
+            class="rounded-lg border border-blue-500/40 bg-[#0b101b] px-4 py-2.5 font-mono text-xs text-blue-300 shadow-lg">
+            Disalin!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
